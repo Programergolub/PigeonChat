@@ -1,0 +1,28 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>PigeonChat</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="chat-container">
+    <div id="pigeon-animation">
+      <svg id="pigeon" viewBox="0 0 100 100">
+        <path class="pigeon-body" d="M30,50 Q50,30 70,50 T90,50 L70,70 Q50,90 30,70 Z" />
+        <circle class="pigeon-eye" cx="60" cy="45" r="3" />
+        <path class="pigeon-beak" d="M70,50 L80,45 L70,55 Z" />
+        <path class="pigeon-wing" d="M40,50 Q50,40 60,50" />
+      </svg>
+    </div>
+    
+    <div id="messages"></div>
+    
+    <div id="input-area">
+      <input type="text" id="message-input" placeholder="Coo your message...">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+
+  <script type="module" src="chat.js"></script>
+</body>
+</html>
